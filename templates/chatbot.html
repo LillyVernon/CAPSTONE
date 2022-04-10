@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Health Centre Chatbot</title>
+    <!-- <link rel="stylesheet" href="/static/css/app.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  
+</head>
+
+<body>
+    
+    <div class="uwiheading">
+        <span>
+            <h4 style="text-align: center; margin: 0%;"> <img style="height: 50px;"src="{{ url_for('static', filename='uwilogopng.png') }}">The University of The West Indies</h4> </span>
+        <h2>Health Center</h2>
+    </div>
+
+
+   <!--  
+    <div class="chatbot1">  
+        <div class="closebox">
+            <p>EVA Health Center Chatbot<span class="close">&times;</span></p>
+        </div>
+          
+        <div  style= "height: 350px; overflow-y: scroll;"> 
+                <div  class="box">
+                    <div id ="lc" class="center">
+                        <div class="dialog-1">
+                            <p> Welcome, I am EVA, what can I help you with?</p>
+                            <div class="left-point"></div>
+                        </div>
+                </div>
+        </div>
+
+    
+	</div>
+    
+    <div class="textcontainer"> 
+        <form action="/action_page.php" id="form1" class="form-container">
+            <span><textarea placeholder="Type message.." name="msg" id="input" required></textarea>
+            <button type="submit" id="btn2" class="btn sendbtn">Send</button> </span>
+          </form>
+    </div> -->
+	
+     <div id="container" class="container">
+        
+         <div id="chat" class="chat">
+            <div class="closebox">
+                <p style="text-align: center;">EVA Health Center Chatbot<span class="close">&times;</span></p>
+            </div>
+          <div id="messages" class="messages"></div>
+          <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" />
+          <button type="submit" id="sendbtn" class="button-7" role="button">Send </button>
+        </div>
+      </div> 
+
+     
+</body>
+
+</html>
